@@ -1,0 +1,426 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+ /* main style */
+*{
+    padding: 0;
+    margin: 0;
+    /* color: #ffffff; */
+}
+ body {
+    position: relative;
+    overflow-x: hidden;
+    background: #202124;
+    color: #000000;
+  }
+  body::-webkit-scrollbar{
+    display: none;
+    overflow: hidden;
+  }
+
+  #wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+  
+  #sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #202124;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  
+  #page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+  }
+  
+  #wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+  }
+  
+  
+  /* Sidebar Styles */
+  
+  .sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    
+  }
+
+
+  .logout-bottom{
+    color: #fff;
+    background-color: #202124;
+  }
+
+ .sidebar-login li{
+    margin-bottom: 0px;
+    color: #ffffff;
+  }
+  .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .sidebar-nav li a:active, .sidebar-nav li a:focus {
+    text-decoration: none;
+  }
+  
+  .sidebar-nav>.sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+  }
+  
+  .sidebar-nav>.sidebar-brand a {
+    color: #ffffff;
+  }
+  
+  .sidebar-nav>.sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+  }
+  
+  @media(min-width:768px) {
+    #wrapper {
+      padding-left: 0;
+    }
+    #wrapper.toggled {
+      padding-left: 250px;
+    }
+    #sidebar-wrapper {
+      width: 0;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+      width: 250px;
+    }
+    #page-content-wrapper {
+      padding: 20px;
+      position: relative;
+    }
+    #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+    }
+  }
+
+  /* login-register style */
+	.formContainer {
+    background-color: #ffffff;
+    margin:20vh auto;
+    padding:20px;
+    border-radius:4px 4px 4px 4px;
+    }
+  .btn {
+    background: #4e5055;
+    }
+    #formHeading {
+    background: #4e5055;
+    margin:-20px;
+    border-radius:4px 4px 0px 0px
+    }
+
+  /* pencarian style */
+  .cari-isi,.live-search-item{
+    --postBg:#333;--postText:#fff
+  }
+  .cari-isi{
+    margin-bottom: 20px; 
+    padding:.5rem 0;
+    width:100%;
+    box-sizing:border-box
+  }
+  .cari-isi *{
+    box-sizing:border-box
+  }
+  .cari-isi form{position:relative}
+  .cari-input{padding:1rem 4rem 1rem 1.25rem;
+    width:100%;
+    border-radius:7px;
+    background-color:#313235;
+    color:var(--postText);
+    outline:0;border:none
+  }
+  .Slider-Title{
+    padding:1rem 4rem 1rem 1.25rem;
+    width:100%;
+    margin-bottom: 20px;
+    background-color:#313235;
+    color:var(--postText);
+    outline:0;border:none
+  }
+
+
+  /* style card */
+  .film:hover{
+    transform: translateY(-10px);
+    
+  }
+  .bs.seventh {
+    position: relative;
+    overflow: hidden;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    width: 100%;
+}
+.bs.seventh .bsx .limit {
+  padding: 56.25% 0 0;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  background: #313235;
+}
+.bs .bsx {
+  overflow: hidden;
+  margin: 7px;
+  margin-bottom: 15px;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  position: relative;
+}
+.bs.seventh .sosev span i {
+  font-style: inherit;
+}
+.bs.seventh .sosev span, .bs.seventh .sosev span a {
+  color: #ddd;
+}
+.bs.seventh .limit img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  transition: transform .3s ease;
+}
+.bs.seventh .epin {
+  position: absolute;
+  z-index: 1;
+  bottom: 5px;
+  left: 5px;
+  padding: 2px 5px;
+  font-size: 12px;
+  color: #fff;
+  line-height: normal;
+  border-radius: 3px;
+  background: #333;
+}
+.bs.seventh .xtps {
+  position: absolute;
+  z-index: 1;
+  bottom: 5px;
+  right: 5px;
+  font-size: 12px;
+  padding: 2px 5px;
+  line-height: normal;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #333;
+}
+.bs.seventh .xtps {
+  position: absolute;
+  z-index: 1;
+  bottom: 5px;
+  right: 5px;
+  font-size: 12px;
+  padding: 2px 5px;
+  line-height: normal;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #333;
+}
+.bs.seventh .sosev {
+  float: left;
+  width: calc(100% - (36px + 10px));
+}
+.bs.seventh .sosev h2 {
+  margin: 0;
+  margin-bottom: 0;
+  line-height: normal;
+  font-size: 15px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+div {
+  display: block;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.bs.seventh .sosev span, .bs.seventh .sosev span a {
+  color: #ddd;
+}
+.bs.seventh .sosev span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: normal;
+  margin-bottom: 3px;
+}
+.bs.seventh .bsx .tt {
+  color: var(--postTeks);
+  font-size: .95em;
+  margin: 8px 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: 42px;
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+}
+.bs.seventh .thethumb {
+  float: left;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.bs .bsx .tt {
+  height: 36px;
+  overflow: hidden;
+  font-size: .95em;
+  margin: 8px 0 0;
+  line-height: 1.25em;
+  text-align: center;
+}
+
+  .title-card{
+    padding:1rem 4rem 1rem 1.25rem;
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius:7px;
+    background-color:#313235;
+    color:var(--postText);
+    outline:0;border:none}
+
+    .customPost, .multiplePost {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 12px;
+      padding: 10px;
+      transition: all .3s ease-out;
+  }
+  
+    .newCustomPostAll[data-version="2"] .customPost { 
+      grid-template-columns: repeat(3,1fr);
+  }
+  
+
+
+  .dagruel-sinopsis {
+    background: var(--sSPostLight);
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 0px solid #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.dagruel-sinopsis .left {
+  float: left;
+  width: 150px;
+  margin-right: 10px;
+}
+.waluhImage {
+  display: inline-block;
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+img {
+  border: 0;
+}
+.dagruel-sinopsis .right {
+  float: right;
+  width: calc(100% - (150px + 10px));
+}
+.sinojudul {
+  border-bottom: 1px solid #eceff5;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+.waluhImage img {
+  max-width: 100%;
+  border-radius: 3px;
+  height: auto;
+}
+.alternaiv {
+  color: #3f4144;
+  overflow: hidden;
+  width: 100%;
+}
+.alternaiv span {
+  color: #aaa;
+  font-size: 13px;
+  line-height: 20px;
+  padding-right: 13px;
+  display: inline-block;
+  float: left;
+}
+
+.desc {
+  line-height: 1.4em;
+  color: #888;
+}
